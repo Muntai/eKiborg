@@ -8,7 +8,7 @@
 }
 
 :root {
-	--text-clor: #000000;
+	--text-color: #000000;
 	--bg-color: #e2ecef;
 	--main-color: #1da233;
 	--second-color: #fff;
@@ -20,7 +20,7 @@
 
 body {
 	background: var(--bg-color);
-	color: var(--text-clor);
+	color: var(--text-color);
 
 }
 
@@ -40,7 +40,7 @@ header {
 .logo {
 	display: flex;
 	align-items: center;
-	color: var(--text-clor);
+	color: var(--text-color);
 	font-size: 40px;
 	font-weight: bold;
 }
@@ -58,7 +58,7 @@ header {
 
 .navlist a {
 	font-size: var(--p-font);
-	color: var(--text-clor);
+	color: var(--text-color);
 	font-weight: 600;
 	margin: 0 35px;
 	transition: all ease .55s;
@@ -92,13 +92,13 @@ header {
 
 .h-btn:hover {
 	background: transparent;
-	border: 2px solid var(--text-clor);
-	color: var(--text-clor);
+	border: 2px solid var(--text-color);
+	color: var(--text-color);
 }
 
 #menu-icon {
 	font-size: 40px;
-	color: var(--text-clor);
+	color: var(--text-color);
 	z-index: 10001;
 	cursor: pointer;
 	margin: 15px;
@@ -108,7 +108,7 @@ header {
 #darkmode {
 	font-size: 30px;
 	cursor: pointer;
-	color: var(--text-clor);
+	color: var(--text-color);
 	margin-left: 10px;
 }
 
@@ -163,7 +163,7 @@ section{
 }
 
 .hero-text p {
-	color: var(--text-clor);
+	color: var(--text-color);
 	font-size: var(--p-font);
 	font-weight: 500;
 	line-height: 26px;
@@ -244,7 +244,7 @@ section{
 .down-arrow i {
 	padding: 14px;
 	color: var(--bg-color);
-	background: var(--text-clor);
+	background: var(--text-color);
 	font-size: 25px;
 	border-radius: 3rem;
 	cursor: pointer;
@@ -252,13 +252,13 @@ section{
 }
 
 .down-arrow i:hover {
-	color: var(--text-clor);
+	color: var(--text-color);
 	background: var(--main-color);
 	transform: translateY(5px);
 }
 
 body.color {
-	--text-clor: #fff;
+	--text-color: #fff;
 	--bg-color: #08162a;
 	--second-color: #2b3544;
 }
@@ -295,7 +295,7 @@ body.color {
 	margin: 6px 0;
 }
 .container-box a{
-	color: var(--text-clor);
+	color: var(--text-color);
 	font-size: var(--p-font);
 	letter-spacing: 1px;
 	transition: all .50s ease;
@@ -326,7 +326,7 @@ body.color {
 	margin-bottom: 2rem;
 }
 .about-text p{
-	color: var(--text-clor);
+	color: var(--text-color);
 	font-size: var(--p-font);
 	line-height: 30px;
 	margin-bottom: 3rem;
@@ -563,7 +563,7 @@ body.color {
 .scroll i{
 	padding: 14px;
 	color: var(--bg-color);
-	background: var(--text-clor);
+	background: var(--text-color);
 	font-size: 25px;
 	border-radius: 3rem;
 	cursor: pointer;
@@ -571,7 +571,7 @@ body.color {
 }
 
 .scroll i:hover {
-	color: var(--text-clor);
+	color: var(--text-color);
 	background: var(--main-color);
 	transform: translateY(5px);
 }
@@ -598,8 +598,9 @@ body.color {
 		padding: 50px 4% 40px;
 		transition: .2s;
 	}
-	.container{
+	.container {
 		padding: 30px 4% 50px;
+	}
 }
 
 @media (max-width: 1400px) {
@@ -763,6 +764,7 @@ body.color {
 		--h2-font: 2rem;
 	}
 }
+
 @media (max-width: 440px){
 	.home{
 		height: 110vh;
