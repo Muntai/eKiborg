@@ -44,4 +44,4 @@ sr.reveal ('.about-text',{delay:300});
 sr.reveal ('.middle-text',{});
 sr.reveal ('.row-btn,.shop-content',{delay:300});
 
-sr.reveal ('.review-content,.contact',{delay:300});
+ sr.reveal ('.review-content,.contact',{delay:300});
