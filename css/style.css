@@ -10,12 +10,45 @@
 :root {
 	--text-color: #000000;
 	--bg-color: #e2ecef;
+	--title-color: hsl(250, 8%, 15%);
 	--main-color: #1da233;
 	--second-color: #fff;
 	--other-color: #535353;
+	--body-color: hsl(250, 60%, 98%);
+	--container-color: #fff;
+	--shadow: hsla(0, 0%, 15%, .1);
+  --scroll-bar-color: hsl(250, 12%, 90%);
+  --scroll-thumb-color: hsl(250, 12%, 80%);
 	--big-font: 5.5rem;
+	--h1-font: 4rem;
 	--h2-font: 1.6rem;
 	--p-font: 1.1rem;
+	/*========== Font and typography ==========*/
+	--body-font: 'Poppins', sans-serif;
+	--biggest-font-size: 4rem;
+	--h1-font-size: 2.25rem;
+	--h2-font-size: 1.5rem;
+	--h3-font-size: 1.25rem;
+	--normal-font-size: 1rem;
+	--small-font-size: .875rem;
+	--smaller-font-size: .813rem;
+
+	/*========== Font weight ==========*/
+	--font-medium: 500;
+	--font-bold: 600;
+
+	/*========== Margenes Bottom ==========*/
+	--mb-0-5: .5rem;
+	--mb-0-75: .75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+	--mb-3: 3rem;
+
+	/*========== z index ==========*/
+	--z-tooltip: 10;
+	--z-fixed: 100;
 }
 
 body {
@@ -172,9 +205,7 @@ section{
 	margin-bottom: 2rem;
 }
 
-#hero .scroll {
-	display: none;
-}
+
 
 .btn{
 	display: inline-block;
@@ -265,6 +296,7 @@ body.color {
 }
 
 /*Body*/
+
 
 .container{
 	padding: 30px 14% 70px;
@@ -556,14 +588,20 @@ body.color {
 	color: var(--main-color);
 }
 
-.scroll{
+/*=============== SCROLL UP ===============*/
+
+.scrollup {
 	position: fixed;
-	bottom: 2.2rem;
-	border-top: 2rem;
 	right: 3.2rem;
+	bottom: -30%;
+	border-top: 2rem;
+	display: inline-flex;
+	z-index: 10;
+	opacity: .8;
+	transition: .4s;
 }
 
-.scroll i{
+.scrollup i{
 	padding: 14px;
 	color: var(--bg-color);
 	background: var(--text-color);
@@ -573,11 +611,59 @@ body.color {
 	transition: all ease .55s;
 }
 
-.scroll i:hover {
+.scrollup i:hover {
+	opacity: 1;
 	color: var(--text-color);
 	background: var(--main-color);
 	transform: translateY(5px);
 }
+
+/*.scrollup__icon {
+	font-size: 1.5rem;
+	color: #fff;
+}*/
+
+/* Show Scroll Up*/
+.show-scroll {
+	bottom: 3rem;
+}
+
+.scrollup__icon {
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+	bottom: 3rem;
+}
+
+.end {
+	padding: 20px 15%;
+	display: block;
+	text-align: center;
+	background: var(--bg-color);
+}
+
+.last_text p {
+	color: var(--second-color);
+	font-size: 14px;
+}
+
+.last_text a {
+	color: var(--second-color);
+	font-size: 16px;
+}
+
+.last_text .link {
+	display: inline;
+	color: var(--main-color);
+}
+
+
+
+/*Product*/
+
 
 
 
