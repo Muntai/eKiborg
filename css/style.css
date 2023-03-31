@@ -663,7 +663,96 @@ body.color {
 
 
 /*Product*/
+img{
+	width: 100%;
+	display: block;
+}
+.main-wrapper {
+	min-height: 100vh;
+	background-color: var(--bg-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container-product{
+	max-width: 1200px;
+	padding: 0 1rem;
+	margin: 0 auto;
+}
+.product-div {
+	margin: 1rem 0;
+	padding: 2rem 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: var(--second-color);
+	border-radius: 2rem;
+	column-gap: 10px;
+}
+.product-div-left {
+	padding: 20px;
+}
+.product-div-right {
+	padding: 20px;
+}
+.img-container-product img {
+	width: 300px;
+	margin: 0 auto;
+}
+.hover-container-product {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 32px;
+}
+.hover-container-product div{
+	border: 2px solid var(--bg-color);
+	padding: 1rem;
+	border-radius: 3px;
+	margin: 0 4px 8px 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.active{
+	border-color: var(--bg-color)!important;
+}
+.hover-container-product div:hover{
+	border-color: var(--bg-color);
+}
+.hover-container-product div img{
+	width: 50px;
+	cursor: pointer;
+}
+/*.product-div-right span{
+	display: block;
+	
+}*/
+.product-name{
+	font-size: 26px;
+	margin-bottom: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	opacity: 0.9;
+	
+}
+.product-price{
+	font-weight: 700;
+	font-size: 24px;
+	opacity: 0.9;
+	font-weight: 500;
+}
 
+.product-description{
+	font-weight: 18px;
+	line-height: 1.6;
+	font-weight: 300;
+	opacity: 0.9;
+	margin-top: 22px;
+}
+.btn-groups{
+	margin-top: 22px;
+}
 
 
 
@@ -781,6 +870,8 @@ body.color {
 	}
 }
 
+
+
 @media (max-width: 860px){
 	.home{
 		grid-template-columns: 1fr;
@@ -797,6 +888,20 @@ body.color {
 	}
 	.about-img{
 		text-align: center;
+	}
+	.product-div{
+		grid-template-columns: 100%;
+	}
+	.product-div-right{
+			text-align: center;
+	}
+	.product-rating{
+			justify-content: center;
+	}
+	.product-description{
+			max-width: 400px;
+			margin-right: auto;
+			margin-left: auto;
 	}
 }
 
@@ -852,6 +957,10 @@ body.color {
 	:root{
 		--big-font: 2.8rem;
 		--h2-font: 2rem;
+	}
+	.btn-groups button{
+		width: 100%;
+		margin-bottom: 10px;
 	}
 }
 
