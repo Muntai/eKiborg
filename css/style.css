@@ -229,6 +229,11 @@ section{
 	box-shadow: var(--main-color) 0px 1px 25px;
 }
 
+header.sticky {
+	background: var(--bg-color);
+	padding: 12px 15%;
+}
+
 .box {
 	background: var(--second-color);
 	padding: 25px 40px;
