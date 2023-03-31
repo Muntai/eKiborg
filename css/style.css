@@ -238,7 +238,7 @@ header.sticky {
 	background: var(--second-color);
 	padding: 25px 40px;
 	border-radius: 2rem;
-	box-shadow: rgba(33, 35, 38, 0.1) opx 10px 10px -10px;
+	box-shadow: rgba(33, 35, 38, .1) opx 10px 10px 10px;
 	transition: all ease .55s;
 	cursor: pointer;
 }
@@ -678,7 +678,7 @@ body.color {
 }
 .container-product{
 	max-width: 1200px;
-	padding: 5rem 1rem;
+	padding: 5rem 0;
 	margin: 0 auto;
 }
 .product-div {
@@ -736,10 +736,19 @@ body.color {
 	width: 50px;
 	cursor: pointer;
 }
-/*.product-div-right span{
+.product-div-right span{
 	display: block;
 
-}*/
+}
+.product-text {
+	text-align: center;
+	font-size: 26px;
+	margin-block-start: 80px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	opacity: 0.9;
+}
+
 .product-name{
 	font-size: 26px;
 	margin-bottom: 22px;
