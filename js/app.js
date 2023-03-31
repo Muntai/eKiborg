@@ -53,32 +53,56 @@ sr.reveal ('.row-btn,.shop-content',{delay:300});
 //sr.reveal ('.contact',{delay:300});
 
 
-/*=============== SHOW SCROLL UP ===============*/ 
-function scrollUp() {
-  const scrollUp = document.getElementById('scroll-up');
-  // when the scroll is higher than 350 viewport height, add the show-scroll class to a tag with the scroll-top class
-  if(this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollUp)
 
+const allHoverImages = document.querySelectorAll('.hover-container-product div img');
+const imgContainer = document.querySelector('.img-container-product');
 
+window.addEventListener('DOMContentLoaded', () => {
+    allHoverImages[0].parentElement.classList.add('active');
+});
 
-const imgs = document.querySelectorAll('.img-select a');
-const imgBtns = [...imgs];
-let imgId = 1;
-
-imgBtns.forEach((imgItem) => {
-    imgItem.addEventListener('click', (event) => {
-        event.preventDefault();
-        imgId = imgItem.dataset.id;
-        slideImage();
+allHoverImages.forEach((image) => {
+    image.addEventListener('mouseover', () =>{
+        imgContainer.querySelector('img').src = image.src;
+        resetActiveImg();
+        image.parentElement.classList.add('active');
     });
 });
 
-function slideImage(){
-    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-
-    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+function resetActiveImg(){
+    allHoverImages.forEach((img) => {
+        img.parentElement.classList.remove('active');
+    });
 }
 
-window.addEventListener('resize', slideImage);
+
+
+/*=============== SHOW SCROLL UP ===============*/ 
+//function scrollUp() {
+//  const scrollUp = document.getElementById('scroll-up');
+//  // when the scroll is higher than 350 viewport height, add the show-scroll class to a tag with the scroll-top class
+//  if(this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+//}
+//window.addEventListener('scroll', scrollUp)
+
+
+
+//const imgs = document.querySelectorAll('.img-select a');
+//const imgBtns = [...imgs];
+//let imgId = 1;
+
+//imgBtns.forEach((imgItem) => {
+//    imgItem.addEventListener('click', (event) => {
+//        event.preventDefault();
+//        imgId = imgItem.dataset.id;
+//        slideImage();
+//    });
+//});
+
+//function slideImage(){
+//    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+//    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+//}
+
+//window.addEventListener('resize', slideImage);
