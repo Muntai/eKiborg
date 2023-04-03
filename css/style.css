@@ -269,7 +269,7 @@ header.sticky {
 }
 
 .box:hover {
-	transform: translateY(-5px) scale(1.1);
+	transform: translateY(-4px) scale(1.05);
 }
 
 .down-arrow {
@@ -507,7 +507,7 @@ body.color {
 .new-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-	gap: 1.3rem;
+	gap: 1.5rem;
 	align-items: center;
 	margin-top: 4rem;
 	text-align: center;
@@ -585,6 +585,9 @@ body.color {
 	color: var(--text-color);
 	font-size: 20px;
 	font-weight: 600;
+}
+.main-d a:hover {
+	color: var(--main-color);
 }
 .main-d i{
 	vertical-align: middle;
