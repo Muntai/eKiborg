@@ -332,6 +332,9 @@ body.color {
 	font-weight: bold;
 	margin: 6px 0;
 }
+.container-box i:hover {
+	color: var(--main-color);
+}
 .container-box a{
 	color: var(--text-color);
 	font-size: var(--p-font);
@@ -359,7 +362,6 @@ body.color {
 	border-radius: 2rem;
 }
 .about-text h2{
-	font-size: var(--bg-color);
 	line-height: 1.3;
 	margin-bottom: 2rem;
 	font-size: var(--h2-font);
@@ -554,7 +556,7 @@ body.color {
 	margin-bottom: 10px;
 }
 .contact-text p{
-	color: var(--other-color);
+	color: var(--text-color);
 	font-size: var(--p-font);
 	max-width: 950px;
 	line-height: 30px;
@@ -563,12 +565,12 @@ body.color {
 .social i{
 	display: inline-block;
 	font-size: 32px;
-	color: var(--other-color);
+	color: var(--text-color);
 	margin: 0 20px;
 	transition: all .50s ease;
 }
 .social .clr i {
-	color: var(--other-color);
+	color: var(--text-color);
 }
 .social i:hover{
 	color: var(--main-color);
@@ -763,6 +765,7 @@ body.color {
 .product-price{
 	font-weight: 700;
 	font-size: 24px;
+	color: var(--main-color);
 	opacity: 0.9;
 	font-weight: 500;
 }
@@ -778,6 +781,23 @@ body.color {
 	margin-top: 22px;
 }
 
+.about-product {
+	display: block;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.about-product h2 {
+	line-height: 1.3;
+	margin-bottom: 2rem;
+	font-size: var(--h2-font);
+	text-align: center;
+}
+
+.about-product p {
+	line-height: 1.3;
+	font-size: var(--p-font);
+}
 
 
 @media (max-width: 1600px) {
