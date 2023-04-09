@@ -16,6 +16,20 @@ thumbnailImgs.forEach((img) => {
 	});
 });
 
+const hero = document.getElementById('hero');
+const hero1 = document.getElementById('hero1');
+const hero2 = document.getElementById('hero2');
+const hero3 = document.getElementById('hero3');
+
+hero1.addEventListener('click', () =>{
+	hero.src = "img/hero1.png"
+})
+hero2.addEventListener('click', () =>{
+	hero.src = "img/hero2.png"
+})
+hero3.addEventListener('click', () =>{
+	hero.src = "img/hero3.png"
+})
 
 let darkmode = document.querySelector('#darkmode');
 let logo = document.querySelector('#logo');
@@ -62,7 +76,6 @@ sr.reveal ('.middle-text',{});
 sr.reveal ('.row-btn,.shop-content',{delay:300});
 
 //sr.reveal ('.contact',{delay:300});
-
 
 
 /*=============== SHOW SCROLL UP ===============*/
